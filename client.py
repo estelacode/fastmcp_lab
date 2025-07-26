@@ -3,6 +3,7 @@ import asyncio
 
 
 # Local Python script
+#The client automatically infers the appropriate transport based on the input: File path ending in .py → Python Stdio transport
 client = Client("my_server_mcp.py")
 
 async def main():
