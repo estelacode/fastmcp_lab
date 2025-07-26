@@ -35,5 +35,12 @@ def personalized_greeting(name: str) -> str:
 
 #------------------5. RUN MCP SERVER------------------
 # To make your server executable, add a __main__ block to your script that calls mcp.run().
+# To run the server, execute the script in your terminal: python my_server_mcp.py
+# This starts the server using the default STDIO transport, which is how clients communicate with local servers.
+# Note: FastMCP also provides a command-line interface for running servers without modifying the source code:
+# > fastmcp run server.py
+# > fastmcp run server.py --transport sse --port 9000
+# Note 2: For development and testing, you can use the dev command to run your server with the MCP Inspector: 
+# > fastmcp dev my_server_mcp.py
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run() 
