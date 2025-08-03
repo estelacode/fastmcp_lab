@@ -1,8 +1,8 @@
 # FastMCP Lab
+## Objetive
+Create a mcp client that get access to tools, resources and prompts exposed by the created mcp server using the FastMCP framework.
 
-
-
-# Installation
+# Initial Project Setup
 1. Create Virtual Environment
 ```bash
 py -3.13 -m venv .venv
@@ -33,7 +33,7 @@ git remote -v
 6. Add first commit and push the current branch and set the remote as upstream
 ```bash
 git add README.md
-git commit -m "First Commit"
+git commit -m "First commit"
 git push -u origin master
 ```
 
