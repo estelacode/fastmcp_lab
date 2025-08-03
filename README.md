@@ -41,3 +41,81 @@ git push -u origin master
 ```bash
 uv add fastmcp
 ```
+
+
+## Git commands
+
+
+```bash
+# Displays the current state of the repository, including uncommitted changes and untracked files.
+git status
+
+# Adds all new and modified files in the current directory to the staging area.
+git add .
+
+# Adds a specific file to the staging area.
+git add <file>
+
+# Commits changes in the staging area and creates a new commit with the specified message.
+git commit -m <message>
+
+# Changes the commit message of the most recent commit.
+git commit --amend -m "new message"
+
+# Adds a new remote repository named "origin" and associates it with the specified Git repository URL.
+git remote add origin https://github.com/user/repository_name.git
+
+# Displays the list of configured remote repositories, including their names and URLs.
+git remote -v
+
+# Pushes local changes to the remote repository "origin" and sets the current branch as the upstream branch of the remote repository.
+git push --upstream origin https://github.com/user/repository_name.git
+
+# Pushes local changes to the remote repository "origin" and sets the "master" branch as the upstream branch of the remote repository.
+git push -u origin master
+
+# Displays the list of local branches in the repository.
+git branch
+
+# Displays the list of remote branches in the repository.
+git branch -r
+
+# Deletes a local branch named <branch_name>.
+git branch -d <branch_name>
+
+# Deletes a remote branch named <branch_name> in the remote repository "origin".
+git push origin --delete <branch_name>
+
+# Creates a new branch named <new_branch_name> and switches to it.
+git checkout -b <new_branch_name>
+
+# Switches to an existing branch named <branch_name>.
+git checkout <branch_name>
+
+# Changes the URL of the remote repository.
+git remote set-url origin <new_url>
+
+# Changes the URL of the remote repository.
+git remote --set-url origin <new_url>
+
+# Displays the commit history of the repository.
+git log
+
+# Displays the commit history of the repository in a more detailed format.
+git log --graph --decorate --all
+
+# Shows the difference between the current file and the file in the last commit.
+git diff
+
+# Shows the difference between the current file and the file in a specific commit.
+git diff <commit_hash>
+
+# Reverts changes made to the current file.
+git checkout -- <file>
+
+# Reverts changes made to all files.
+git checkout -- .
+
+# Deletes all untracked files in the current directory.
+git clean -f
+```
