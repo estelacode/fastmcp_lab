@@ -74,6 +74,21 @@ git push --upstream origin https://github.com/user/repository_name.git
 # Pushes local changes to the remote repository "origin" and sets the "master" branch as the upstream branch of the remote repository.
 git push -u origin master
 
+# Downloads the latest changes from the remote repository.
+git fetch origin
+
+# Downloads the latest changes from the remote repository and merges them into the current branch.
+git pull origin
+
+# Merges the specified branch into the current branch.
+git merge <branch_name>
+
+# Creates a new branch named <new_branch_name> and switches to it.
+git checkout -b <new_branch_name>
+
+# Switches to an existing branch named <branch_name>.
+git checkout <branch_name>
+
 # Displays the list of local branches in the repository.
 git branch
 
@@ -85,12 +100,6 @@ git branch -d <branch_name>
 
 # Deletes a remote branch named <branch_name> in the remote repository "origin".
 git push origin --delete <branch_name>
-
-# Creates a new branch named <new_branch_name> and switches to it.
-git checkout -b <new_branch_name>
-
-# Switches to an existing branch named <branch_name>.
-git checkout <branch_name>
 
 # Changes the URL of the remote repository.
 git remote set-url origin <new_url>
